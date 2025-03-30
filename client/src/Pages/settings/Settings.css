@@ -1,0 +1,173 @@
+.Settings {
+  position: relative;
+  display: grid;
+  grid-template-columns: 18rem auto 20rem;
+  gap: 1rem;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-card {
+  background-color: var(--cardColor);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.profile-image {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.profile-stats {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.profile-stats > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.profile-stats > div > span:first-child {
+  font-weight: bold;
+}
+
+.profile-stats > div > span:last-child {
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+.SettingsCenter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100vh;
+  overflow: auto;
+  background-color: var(--cardColor);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.settings-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.settings-header h2 {
+  font-weight: bold;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 1rem;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  color: var(--black);
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  color: var(--blue);
+}
+
+.settingsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.settingsBox {
+  background-color: var(--inputColor);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.settingsBox h3 {
+  font-weight: bold;
+  color: var(--black);
+}
+
+.settingsBox p {
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--buttonBg);
+  transition: all 100ms ease-out;
+  padding: 0.6rem 1rem;
+  width: max-content;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--blue);
+}
+
+.fc-button {
+  font-size: 0.9rem;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .Settings {
+    grid-template-columns: 16rem auto 18rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Settings {
+    grid-template-columns: 0rem auto 0rem;
+  }
+  .SettingsCenter {
+    width: 95vw;
+    margin: 0 auto;
+  }
+  
+  .left-side, .RightSide {
+    display: none;
+  }
+} 

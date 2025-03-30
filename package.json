@@ -1,0 +1,19 @@
+{
+  "name": "social-media-web-app",
+  "version": "1.0.0",
+  "description": "Social Media Web App using MERN Stack",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "server-install": "cd Server && npm install",
+    "install-all": "npm run client-install && npm run server-install",
+    "client": "cd client && npm start",
+    "server": "cd Server && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 

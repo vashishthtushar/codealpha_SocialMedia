@@ -1,0 +1,32 @@
+.SuggestedBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--cardColor);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.suggested-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.suggested-header h3 {
+  margin: 0;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.see-all {
+  font-size: 0.8rem;
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.no-suggestions {
+  color: var(--gray);
+  text-align: center;
+  padding: 1rem 0;
+} 

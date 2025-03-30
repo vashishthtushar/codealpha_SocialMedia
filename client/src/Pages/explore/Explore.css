@@ -1,0 +1,61 @@
+.Explore {
+  position: relative;
+  display: grid;
+  grid-template-columns: 18rem auto 20rem;
+  gap: 1rem;
+}
+
+.ExploreCenter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--cardColor);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.explore-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.explore-header h2 {
+  font-weight: bold;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 1rem;
+}
+
+.users-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.loading, .no-users {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--gray);
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .Explore {
+    grid-template-columns: 16rem auto 18rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Explore {
+    grid-template-columns: 0rem auto 0rem;
+  }
+  
+  .ExploreCenter {
+    width: 95vw;
+    margin: 0 auto;
+  }
+} 

@@ -1,0 +1,12 @@
+.direct-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.direct-link:hover {
+  color: var(--blue);
+} 

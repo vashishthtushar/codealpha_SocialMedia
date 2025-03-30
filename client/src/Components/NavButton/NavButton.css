@@ -1,0 +1,19 @@
+.nav-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.1);
+}
+
+.nav-button img {
+  width: 1.5rem;
+  height: 1.5rem;
+} 

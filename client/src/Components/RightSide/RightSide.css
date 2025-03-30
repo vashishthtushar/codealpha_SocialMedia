@@ -1,0 +1,41 @@
+.RightSide{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.navIcons{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    transition: all 300ms ease;
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+.navIcon:hover {
+    background-color: var(--inputColor);
+    color: var(--blue);
+}
+
+.navIcon img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.rg-button{
+    height: 3rem;
+    width: 80%;
+    align-self: center;
+}
+
