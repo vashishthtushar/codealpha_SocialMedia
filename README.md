@@ -34,6 +34,10 @@ This project is a full-stack social media web application 🌐 that has been dev
 - View No Of Followers/Following Of User.
 - View Other Posts By Follow Users And React On That Posts.
 - Update/Edit Profile Page User Data.
+- settings feature is also provide which can provide you settings and some privacy related services.
+- Chat system is also available in the site where you can chat with your friends ans users...
+- we also add the notification feature in the site , you'll be able to notify about the sites updates...
+- 
 
 
 ### **SignUp/Register Page**  :
